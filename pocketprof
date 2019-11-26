@@ -1,0 +1,44 @@
+//No guarantees about whether or not this will actually function. Please mock frankencode.
+        if ($familiar[pocket professor].familiar_is_usable());
+    {
+        int lectures_used = get_property_int("_pocketProfessorLectures");
+        string name = lectures_used + " Pocket Professor lectures used";
+        string [int] description;
+        string image_name = "";
+       
+        description.listAppend("Sausage goblins, ninja snowman assassin, ghosts, or something else...?");
+       
+        string url = "";
+       
+        if ($familiar[pocket professor].familiar_is_usable())
+        {
+            image_name = "pocket professor";
+        }
+       
+        if (!($familiars[Frumious Bandersnatch, pocket professor] contains my_familiar()))
+            url = "familiar.php";
+               
+        resource_entries.listAppend(ChecklistEntryMake(image_name, url, ChecklistSubentryMake(name, "", description)));
+    }
+   
+        if ($familiar[pocket professor].familiar_is_usable());
+    {
+        int thesis_used = get_property_int("__thesisDelivered");
+        string name = thesis_used + " Pocket Professor thesis delivered";
+        string [int] description;
+        string image_name = "";
+       
+        description.listAppend("+11 advs from 1,300 HP monster.");
+       
+        string url = "";
+       
+        if ($familiar[pocket professor].familiar_is_usable())
+        {
+            image_name = "pocket professor";
+        }
+       
+        if (!($familiars[Frumious Bandersnatch, pocket professor] contains my_familiar()))
+            url = "familiar.php";
+               
+        resource_entries.listAppend(ChecklistEntryMake(image_name, url, ChecklistSubentryMake(name, "", description)));
+    }
